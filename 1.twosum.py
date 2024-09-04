@@ -30,7 +30,7 @@
 # Only one valid answer exists.
 
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
         n = len(nums)
         for i in range(n - 1):
             for j in range(i+1, n):
@@ -38,3 +38,12 @@ class Solution:
                     return [i,j]
         return []
     
+def main():
+    sol = Solution()
+
+    # Example
+    nums = [2,7,11,15]
+    target = 9
+    print(sol.twoSum(nums, target))  # Output: [0, 1]
+
+main()
